@@ -20,8 +20,8 @@ stages:
       size: 1108
     params:
       params.yaml:
-        split.test_size: 0.2
-        train.n_estimators: 100
+        split.test_size: 0.3
+        train.n_estimators: 180
         train.random_state: 42
     outs:
     - path: metrics/eval.json
@@ -30,5 +30,5 @@ stages:
       size: 17
     - path: model/model.pkl
       hash: md5
-      md5: 3db463715f281fe9c8a7e549a6463737
-      size: 187217
+      md5: b55f6d0c3680afb97262b7994ff40ce4
+      size: 334785
